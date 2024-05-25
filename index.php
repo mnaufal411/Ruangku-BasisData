@@ -1,3 +1,21 @@
+<?php
+require 'includes/config.php';
+require 'includes/functions.php';
+
+if (isset($_SESSION['user_id'])) {
+    if ($_SESSION['role'] == 'Admin') {
+        header("Location: admin/admin_dashboard.php");
+        exit();
+    } elseif ($_SESSION['role'] == 'Operator') {
+        header("Location: operator/operator_dashboard.php");
+        exit();
+    } elseif ($_SESSION['role'] == 'Manajer') {
+        header("Location: manager/manager_dashboard.php");
+        exit();
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +53,11 @@
     <div class="header">
         <h1>Ruangku</h1>
         <h3 class="datetime" id="datetime"></h3>
-        <a href="login.php" class="btn">Login</a>
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <a href="logout.php" class="btn">Logout</a>
+        <?php else: ?>
+            <a href="login.php" class="btn">Login</a>
+        <?php endif; ?>
     </div>
     <div class="container">
         <h2>Welcome to Ruangku</h2>

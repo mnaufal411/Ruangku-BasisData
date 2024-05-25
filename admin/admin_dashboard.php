@@ -20,12 +20,12 @@ if (!isAdmin()) {
     </div>
     <div class="container">
         <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
-        <ul class="nav">
+        <ul>
             <li><a href="manage_users.php">Manage Users</a></li>
             <li><a href="manage_rooms.php">Manage Rooms</a></li>
             <li><a href="manage_equipment.php">Manage Equipment</a></li>
         </ul>
-        <a href="../logout.php" class="logout">Logout</a>
+        <a href="../logout.php">Logout</a>
     </div>
 </body>
 </html>
