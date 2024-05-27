@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e65100;
+}
+
+h2, h3 {
+    color: #ff9800;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"], form input[type="number"], form input[type="datetime-local"], form input[type="date"], form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #e65100;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #bf360c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ff9800;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e65100;
+    color: white;
+}
+
+a {
+    color: #e65100;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #e65100;
+    color: white;
+    border-radius: 4px;
+}
+
+ul li a:hover {
+    background-color: #bf360c;
+}

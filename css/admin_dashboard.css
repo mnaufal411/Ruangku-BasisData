@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #24292e;
+    color: #24292e(107, 102, 255);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    color: #24292e;
+}
+
+
+.menu-button {
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #24292e;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #24292e;
+}
+
+.menu .back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #24292e;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu .back-button:hover {
+    background-color: #24292e;
+}
+
+.container {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h2 {
+    margin-top: 0;
+}
+
+.grid-item form {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item form input,
+.grid-item form select,
+.grid-item form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grid-item form input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.grid-item form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}

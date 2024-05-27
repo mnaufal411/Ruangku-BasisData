@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007cf9;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header .btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="submit"].btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"].btn:hover {
+    background-color: #218838;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.table td form {
+    display: inline-block;
+}
+
+ 
